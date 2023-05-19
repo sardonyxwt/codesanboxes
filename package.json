@@ -1,0 +1,24 @@
+{
+  "name": "codesandbox-ci-test",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/abereghici/codesandbox-ci-test.git",
+  "author": "Alexandru Bereghici <abereghici@tripadvisor.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "build": "kcd-scripts build"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "kcd-scripts": "^11.2.2",
+    "react": "^17.0.2"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.16.0"
+  }
+}
