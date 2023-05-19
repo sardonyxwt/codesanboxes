@@ -7,9 +7,9 @@
   ],
   "tasks": {
     "dev": {
-      "name": "dev",
-      "command": "npm run dev",
-      "runAtStart": true
+      "name": "nextjs sandbox run",
+      "command": "npm run dev -w @puzzlelabs-sandboxes/next-sandbox",
+      "runAtStart": false
     }
   }
 }
