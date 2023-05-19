@@ -1,4 +1,5 @@
 {
+  "node": "18",
   "buildCommand": false,
-  "node": "18"
+  "sandboxes": ["/sandboxes/next"]
 }
