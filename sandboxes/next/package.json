@@ -1,0 +1,20 @@
+{
+  "name": "@puzzlelabs-sandboxes/next-sandbox",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "@puzzlelabs/puzzle-glossary": "0.6.3-rc.1",
+    "@puzzlelabs/puzzle-glossary-react": "0.6.3-rc.1",
+    "next": "13.4.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.2.1",
+    "@types/react": "18.2.6",
+    "typescript": "5.0.4"
+  }
+}
