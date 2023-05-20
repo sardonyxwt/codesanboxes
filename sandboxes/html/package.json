@@ -1,0 +1,10 @@
+{
+  "name": "@puzzlelabs-sandboxes/html-sandbox",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ws --spa index.html"
+  },
+  "devDependencies": {
+    "local-web-server": "5.3.0"
+  }
+}

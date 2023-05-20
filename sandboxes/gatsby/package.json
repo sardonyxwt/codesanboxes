@@ -1,14 +1,16 @@
 {
-  "name": "@puzzlelabs-sandboxes/next-sandbox",
-  "version": "1.0.1",
-  "license": "MIT",
+  "name": "gatsby-sandbox",
+  "version": "1.0.0",
+  "keywords": [
+    "gatsby"
+  ],
   "scripts": {
-    "start": "next dev"
+    "start": "gatsby develop"
   },
   "dependencies": {
     "@puzzlelabs/puzzle-glossary": "0.6.3-rc.3",
     "@puzzlelabs/puzzle-glossary-react": "0.6.3-rc.3",
-    "next": "13.4.3",
+    "gatsby": "5.9.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   }

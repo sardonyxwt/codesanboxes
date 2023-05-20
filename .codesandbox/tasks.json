@@ -6,9 +6,24 @@
     }
   ],
   "tasks": {
-    "dev": {
+    "dev:next": {
       "name": "Run NextJS Sandbox",
-      "command": "npm run dev -w @puzzlelabs-sandboxes/next-sandbox",
+      "command": "npm run start -w @puzzlelabs-sandboxes/next-sandbox",
+      "runAtStart": false
+    },
+    "dev:gatsby": {
+      "name": "Run Gatsby Sandbox",
+      "command": "npm run start -w @puzzlelabs-sandboxes/gatsby-sandbox",
+      "runAtStart": false
+    },
+    "dev:react": {
+      "name": "Run ReactJS Sandbox",
+      "command": "npm run start -w @puzzlelabs-sandboxes/react-sandbox",
+      "runAtStart": false
+    },
+    "dev:html": {
+      "name": "Run Html Sandbox",
+      "command": "npm run start -w @puzzlelabs-sandboxes/html-sandbox",
       "runAtStart": false
     }
   }
