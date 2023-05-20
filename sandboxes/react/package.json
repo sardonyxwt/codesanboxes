@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "PORT=3006 react-scripts start"
+    "start": "PORT=8000 react-scripts start"
   },
   "dependencies": {
     "@puzzlelabs/puzzle-glossary": "0.6.3-rc.3",
