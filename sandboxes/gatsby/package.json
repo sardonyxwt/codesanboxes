@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-sandbox",
+  "name": "@puzzlelabs-sandboxes/gatsby-sandbox",
   "version": "1.0.0",
   "keywords": [
     "gatsby"
   ],
   "scripts": {
-    "start": "gatsby develop"
+    "start": "gatsby develop -p 8100"
   },
   "dependencies": {
     "@puzzlelabs/puzzle-glossary": "0.6.3-rc.3",

@@ -2,7 +2,7 @@
   "name": "@puzzlelabs-sandboxes/html-sandbox",
   "version": "1.0.0",
   "scripts": {
-    "start": "ws --spa index.html"
+    "start": "ws --spa index.html -p 8300"
   },
   "devDependencies": {
     "local-web-server": "5.3.0"
