@@ -3,10 +3,9 @@
 <head>
   <title>Html Sandbox</title>
   <meta charset="UTF-8"/>
-  <script src="https://unpkg.com/@puzzlelabs/puzzle-glossary@0.6.3-rc.3/dist/puzzle-glossary/puzzle-glossary.js"></script>
 </head>
 <body>
-<p>
+<p id="highlightZone">
   Search openai We are on the verge of a creative renaissance. The world is changing and technology is evolving at
   an unprecedented rate. This is opening up new opportunities for creativity and expression. It has never been
   easier to be a creator. With the tools and resources available today, anyone can start creating and sharing
@@ -48,41 +47,51 @@
   in a virtual machine or browser, while Java Script is an OOP scripting language (script runs on a browser only).
   During the storm, we use the brain and brainstorm in the brainstorming game. AI . Airbnb.
 </p>
-<highlight-widget api-key="6437d691b3c98451b429460f"></highlight-widget>
 <script>
-  const widget = document.querySelector("highlight-widget");
+  document.addEventListener('highlightWidgetReady', function() {
+    highlightWidgetManager.config = {
+      selectors: ['#highlightZone'],
+      hasMarkAll: true,
+      puzzleBranding: true,
+      hasMarkHyperlink: true,
+      callToAction: {
+        text: 'CTA',
+        link: 'https://puzzlelabs.ai',
+      },
+    };
 
-  widget.config={
-    hasMarkAll: true,
-    puzzleBranding: true,
-    hasMarkHyperlink: true,
-    callToAction: {
-      text: 'CTA',
-      link: 'https://puzzlelabs.ai',
-    },
-    selectors: ['body'],
-  };
+    highlightWidgetManager.theme = {
+      mode: 'light',
+      // fontFamily: 'Inter',
+      // marker: {
+      //   color: 'black',
+      //   type: 'highlight',
+      // },
+      // resource: {
+      //   color: 'black',
+      // },
+      // callToAction: {
+      //     color: 'black',
+      //     backgroundColor: 'black',
+      // },
+      // modal: {
+      //     primaryColor: 'black',
+      //     secondaryColor: 'black',
+      //     backgroundColor: 'black',
+      // }
+    };
 
-  widget.theme={
-    mode: 'light',
-    // fontFamily: 'Inter',
-    // marker: {
-    //   color: 'black',
-    //   type: 'highlight',
-    // },
-    // resource: {
-    //   color: 'black',
-    // },
-    // callToAction: {
-    //     color: 'black',
-    //     backgroundColor: 'black',
-    // },
-    // modal: {
-    //     primaryColor: 'black',
-    //     secondaryColor: 'black',
-    //     backgroundColor: 'black',
-    // }
-  };
+    highlightWidgetManager.handlers = {
+      onCopyClick: console.log,
+      onMarkerHover: console.log,
+      onResourceClick: console.log,
+      onCtaClick: console.log,
+      onEvent: console.log,
+    }
+
+    highlightWidgetManager.init('6437d691b3c98451b429460f', { mark: true });
+  })
 </script>
+<script type="module" src="https://unpkg.com/@puzzlelabs/puzzle-glossary@0.6.3-rc.25/dist/puzzle-glossary/puzzle-glossary.js"></script>
 </body>
 </html>

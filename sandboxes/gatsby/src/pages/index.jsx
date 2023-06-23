@@ -1,11 +1,54 @@
-import * as React from "react"
-import {HighlightWidget} from "@puzzlelabs/puzzle-glossary-react";
+import React, {useEffect} from "react";
+import {HighlightZone} from "@puzzlelabs/puzzle-glossary-react";
+import {highlightWidgetManager} from "@puzzlelabs/puzzle-glossary";
 
 export default function IndexPage() {
+  useEffect(() => {
+    highlightWidgetManager.config = {
+      hasMarkAll: true,
+      puzzleBranding: true,
+      hasMarkHyperlink: true,
+      callToAction: {
+        text: 'CTA',
+        link: 'https://puzzlelabs.ai',
+      },
+    };
+
+    highlightWidgetManager.theme = {
+      mode: 'light',
+      // fontFamily: 'Inter',
+      // marker: {
+      //   color: 'black',
+      //   type: 'highlight',
+      // },
+      // resource: {
+      //   color: 'black',
+      // },
+      // callToAction: {
+      //     color: 'black',
+      //     backgroundColor: 'black',
+      // },
+      // modal: {
+      //     primaryColor: 'black',
+      //     secondaryColor: 'black',
+      //     backgroundColor: 'black',
+      // }
+    };
+
+    highlightWidgetManager.handlers = {
+      onCopyClick: console.log,
+      onMarkerHover: console.log,
+      onResourceClick: console.log,
+      onCtaClick: console.log,
+      onEvent: console.log,
+    }
+
+    highlightWidgetManager.init('6437d691b3c98451b429460f');
+  }, []);
+
   return (
     <main>
-      <title>Gatsby Sandbox</title>
-      <p>
+      <HighlightZone as='p'>
         Search openai We are on the verge of a creative renaissance. The world is changing and technology is evolving at
         an unprecedented rate. This is opening up new opportunities for creativity and expression. It has never been
         easier to be a creator. With the tools and resources available today, anyone can start creating and sharing
@@ -46,40 +89,7 @@ export default function IndexPage() {
         information technology. Java is an OOP programming language, and it helps to create applications that function
         in a virtual machine or browser, while Java Script is an OOP scripting language (script runs on a browser only).
         During the storm, we use the brain and brainstorm in the brainstorming game. AI . Airbnb.
-      </p>
-      <HighlightWidget
-        apiKey="6437d691b3c98451b429460f"
-        config={{
-          hasMarkAll: true,
-          puzzleBranding: true,
-          hasMarkHyperlink: true,
-          callToAction: {
-            text: 'CTA',
-            link: 'https://puzzlelabs.ai',
-          },
-          selectors: ['body'],
-        }}
-        theme={{
-          mode: 'light',
-          // fontFamily: 'Inter',
-          // marker: {
-          //   color: 'black',
-          //   type: 'highlight',
-          // },
-          // resource: {
-          //   color: 'black',
-          // },
-          // callToAction: {
-          //     color: 'black',
-          //     backgroundColor: 'black',
-          // },
-          // modal: {
-          //     primaryColor: 'black',
-          //     secondaryColor: 'black',
-          //     backgroundColor: 'black',
-          // }
-        }}
-      />
+      </HighlightZone>
     </main>
   )
 }
