@@ -3,7 +3,7 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "dev": "PORT=8600 remix dev"
+    "start": "PORT=8600 remix dev"
   },
   "dependencies": {
     "@puzzlelabs/puzzle-glossary": "0.6.3-rc.31",

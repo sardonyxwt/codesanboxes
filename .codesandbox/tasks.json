@@ -9,10 +9,15 @@
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
+    "dev:remix": {
+      "name": "Run Remix Sandbox",
+      "command": "npm run start -w @puzzlelabs-sandboxes/remix-sandbox",
+      "runAtStart": false
+    },
     "dev:next": {
       "name": "Run NextJS Sandbox",
       "command": "npm run start -w @puzzlelabs-sandboxes/next-sandbox",
-      "runAtStart": true
+      "runAtStart": false
     },
     "dev:gatsby": {
       "name": "Run Gatsby Sandbox",
