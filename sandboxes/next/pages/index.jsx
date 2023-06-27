@@ -1,7 +1,10 @@
 import Head from "next/head";
 import {useEffect} from "react";
-import {highlightWidgetManager} from "@puzzlelabs/puzzle-glossary";
 import {HighlightZone} from "@puzzlelabs/puzzle-glossary-react";
+import {highlightWidgetManager} from "@puzzlelabs/puzzle-glossary";
+import {defineCustomElements} from '@puzzlelabs/puzzle-glossary/dist/loader';
+
+defineCustomElements();
 
 export default function IndexPage() {
   useEffect(() => {
