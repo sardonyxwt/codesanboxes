@@ -1,6 +1,9 @@
 import React, {useEffect} from "react";
 import {HighlightZone} from "@puzzlelabs/puzzle-glossary-react";
 import {highlightWidgetManager} from "@puzzlelabs/puzzle-glossary";
+import {defineCustomElements} from '@puzzlelabs/puzzle-glossary/dist/loader';
+
+defineCustomElements();
 
 export default function IndexPage() {
   useEffect(() => {

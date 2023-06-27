@@ -1,8 +1,10 @@
-import "@puzzlelabs/puzzle-glossary";
 import {StrictMode} from "react";
 import {createRoot} from "react-dom/client";
 import {HighlightZone} from "@puzzlelabs/puzzle-glossary-react";
 import {highlightWidgetManager} from "@puzzlelabs/puzzle-glossary";
+import {defineCustomElements} from '@puzzlelabs/puzzle-glossary/dist/loader';
+
+defineCustomElements();
 
 const App = () => {
   return <HighlightZone as='p'>
