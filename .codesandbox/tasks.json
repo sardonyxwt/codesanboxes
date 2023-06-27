@@ -1,15 +1,18 @@
 {
+  // These tasks will run in order when initializing your CodeSandbox project.
   "setupTasks": [
     {
       "name": "Install Dependencies",
       "command": "npm i"
     }
   ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
     "dev:next": {
       "name": "Run NextJS Sandbox",
       "command": "npm run start -w @puzzlelabs-sandboxes/next-sandbox",
-      "runAtStart": false
+      "runAtStart": true
     },
     "dev:gatsby": {
       "name": "Run Gatsby Sandbox",
