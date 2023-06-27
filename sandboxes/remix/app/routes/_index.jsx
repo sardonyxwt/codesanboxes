@@ -1,6 +1,9 @@
+import "../styles/_index.css";
 import {useEffect} from "react";
-import {HighlightZone} from "@puzzlelabs/puzzle-glossary-react";
+import {HighlightZone, PageWidget} from "@puzzlelabs/puzzle-glossary-react";
 import {highlightWidgetManager, defineCustomElementsFromUnPkg} from "@puzzlelabs/puzzle-glossary";
+
+defineCustomElementsFromUnPkg();
 
 export const meta = () => {
   return [
@@ -9,10 +12,8 @@ export const meta = () => {
   ];
 };
 
-export default function Index() {
+const HighlightZoneExample = () => {
   useEffect(() => {
-    defineCustomElementsFromUnPkg();
-
     highlightWidgetManager.config = {
       hasMarkAll: true,
       puzzleBranding: true,
@@ -23,26 +24,26 @@ export default function Index() {
       },
     };
 
-    highlightWidgetManager.theme = {
-      mode: 'light',
-      // fontFamily: 'Inter',
-      // marker: {
-      //   color: 'black',
-      //   type: 'highlight',
-      // },
-      // resource: {
-      //   color: 'black',
-      // },
-      // callToAction: {
-      //     color: 'black',
-      //     backgroundColor: 'black',
-      // },
-      // modal: {
-      //     primaryColor: 'black',
-      //     secondaryColor: 'black',
-      //     backgroundColor: 'black',
-      // }
-    };
+    // highlightWidgetManager.theme = {
+    //   mode: 'light',
+    //   fontFamily: 'Inter',
+    //   marker: {
+    //     color: 'black',
+    //     type: 'highlight',
+    //   },
+    //   resource: {
+    //     color: 'black',
+    //   },
+    //   callToAction: {
+    //       color: 'black',
+    //       backgroundColor: 'black',
+    //   },
+    //   modal: {
+    //       primaryColor: 'black',
+    //       secondaryColor: 'black',
+    //       backgroundColor: 'black',
+    //   }
+    // };
 
     highlightWidgetManager.handlers = {
       onCopyClick: console.log,
@@ -53,10 +54,10 @@ export default function Index() {
     }
 
     highlightWidgetManager.init('6437d691b3c98451b429460f');
-  }, []);
+  }, [])
 
   return (
-    <HighlightZone as='p'>
+    <HighlightZone as='p' className='highlight-zone'>
       Search openai We are on the verge of a creative renaissance. The world is changing and technology is evolving at
       an unprecedented rate. This is opening up new opportunities for creativity and expression. It has never been
       easier to be a creator. With the tools and resources available today, anyone can start creating and sharing
@@ -99,4 +100,17 @@ export default function Index() {
       During the storm, we use the brain and brainstorm in the brainstorming game. AI . Airbnb.
     </HighlightZone>
   );
+}
+
+const PageWidgetExample = () => (
+  <PageWidget apiKey='6437d691b3c98451b429460f'/>
+)
+
+export default function IndexPage() {
+  return (
+    <>
+      <HighlightZoneExample/>
+      {/*<PageWidgetExample/>*/}
+    </>
+  )
 }

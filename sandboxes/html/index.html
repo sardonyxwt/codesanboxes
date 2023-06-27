@@ -3,6 +3,17 @@
 <head>
   <title>Html Sandbox</title>
   <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #highlightZone {
+      padding: 24px;
+    }
+  </style>
 </head>
 <body>
 <p id="highlightZone">
@@ -47,6 +58,7 @@
   in a virtual machine or browser, while Java Script is an OOP scripting language (script runs on a browser only).
   During the storm, we use the brain and brainstorm in the brainstorming game. AI . Airbnb.
 </p>
+<!--<page-widget api-key="6437d691b3c98451b429460f"/>-->
 <script>
   document.addEventListener('highlightWidgetReady', function() {
     highlightWidgetManager.config = {
@@ -60,26 +72,26 @@
       },
     };
 
-    highlightWidgetManager.theme = {
-      mode: 'light',
-      // fontFamily: 'Inter',
-      // marker: {
-      //   color: 'black',
-      //   type: 'highlight',
-      // },
-      // resource: {
-      //   color: 'black',
-      // },
-      // callToAction: {
-      //     color: 'black',
-      //     backgroundColor: 'black',
-      // },
-      // modal: {
-      //     primaryColor: 'black',
-      //     secondaryColor: 'black',
-      //     backgroundColor: 'black',
-      // }
-    };
+    // highlightWidgetManager.theme = {
+    //   mode: 'light',
+    //   fontFamily: 'Inter',
+    //   marker: {
+    //     color: 'black',
+    //     type: 'highlight',
+    //   },
+    //   resource: {
+    //     color: 'black',
+    //   },
+    //   callToAction: {
+    //       color: 'black',
+    //       backgroundColor: 'black',
+    //   },
+    //   modal: {
+    //       primaryColor: 'black',
+    //       secondaryColor: 'black',
+    //       backgroundColor: 'black',
+    //   }
+    // };
 
     highlightWidgetManager.handlers = {
       onCopyClick: console.log,

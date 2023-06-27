@@ -6,8 +6,8 @@
     "start": "PORT=8600 remix dev"
   },
   "dependencies": {
-    "@puzzlelabs/puzzle-glossary": "0.6.3-rc.32",
-    "@puzzlelabs/puzzle-glossary-react": "0.6.3-rc.32",
+    "@puzzlelabs/puzzle-glossary": "0.6.3-rc.34",
+    "@puzzlelabs/puzzle-glossary-react": "0.6.3-rc.34",
     "@remix-run/css-bundle": "1.18.0",
     "@remix-run/node": "1.18.0",
     "@remix-run/react": "1.18.0",

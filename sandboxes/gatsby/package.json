@@ -8,8 +8,8 @@
     "start": "gatsby develop -p 8100"
   },
   "dependencies": {
-    "@puzzlelabs/puzzle-glossary": "0.6.3-rc.32",
-    "@puzzlelabs/puzzle-glossary-react": "0.6.3-rc.32",
+    "@puzzlelabs/puzzle-glossary": "0.6.3-rc.34",
+    "@puzzlelabs/puzzle-glossary-react": "0.6.3-rc.34",
     "gatsby": "5.9.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
