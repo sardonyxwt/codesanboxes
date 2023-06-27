@@ -6,8 +6,8 @@ import {defineCustomElements} from '@puzzlelabs/puzzle-glossary/dist/loader';
 
 defineCustomElements();
 
-const App = () => {
-  return <HighlightZone as='p'>
+const App = () => (
+  <HighlightZone as='p'>
     Search openai We are on the verge of a creative renaissance. The world is changing and technology is evolving at
     an unprecedented rate. This is opening up new opportunities for creativity and expression. It has never been
     easier to be a creator. With the tools and resources available today, anyone can start creating and sharing
@@ -49,7 +49,7 @@ const App = () => {
     in a virtual machine or browser, while Java Script is an OOP scripting language (script runs on a browser only).
     During the storm, we use the brain and brainstorm in the brainstorming game. AI . Airbnb.
   </HighlightZone>
-}
+);
 
 const root = createRoot(document.getElementById("root"));
 
